@@ -111,7 +111,12 @@ nav a{
     width: 253px;
     height: 502px;
     padding: 1%;
+    display:flex;
+    align-items: center;
+   
+    justify-content: center;
     
+   
 }
  
 #HomemDeFerro{ /*style homem de ferro*/

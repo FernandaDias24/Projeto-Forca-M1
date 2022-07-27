@@ -142,7 +142,7 @@ function validaLetras(){                                                   //Val
         if(erradas==letrasCorretas.length){                                // valida que a letra está errada e adiciona a um vetor
                   
         letrasErradas.push(letra)        
-        alert ("Letra - " + letra + " - não existe")
+        //alert ("Letra - " + letra + " - não existe")
         
         }
 
@@ -161,15 +161,50 @@ function validaLetras(){                                                   //Val
 
     }
     else{
-        var imagem = document.querySelector("#HomemDeFerro");
-        imagem.setAttribute('src', 'lampada.png');
+        var imagem = document.querySelector("#imagem");
+        
+        imagem.innerHTML ='<img src="gif tonystark.gif" width="480" height="380">'  
+        setTimeout(function(){
+            imagem.innerHTML ='<img src="voce perdeu.jpeg" width="480" height="380">'
+        },2400);
+        setTimeout()
 
         return alert ("o jogo acabou")
         
     }
 
     if (JSON.stringify(palavraTela)==JSON.stringify(letrasCorretas)) {               // valida que a palavra está formada corretamente
-        document.getElementById("imagem").style.background = "url('./homem de ferro base.jpg')";
+        
+        var imagem = document.querySelector("#imagem");
+        imagem.innerHTML ='<img src="gif homemdeferro.gif" width="480" height="380">'  
+        setTimeout(function(){
+
+
+            switch(PerdaDeDesconto){
+
+                
+                case 0:
+                    imagem.innerHTML ='<img src="desconto40.jpeg" width="480" height="380">'
+                     break
+                case 1:
+                    imagem.innerHTML ='<img src="desconto40.jpeg" width="480" height="380">'
+                     break;
+                case 2:
+                    imagem.innerHTML ='<img src="desconto30.jpeg" width="480" height="380">'
+                     break;
+                case 3:
+                    imagem.innerHTML ='<img src="desconto20.jpeg" width="480" height="380">'
+                     break;
+                case 3:
+                    imagem.innerHTML ='<img src="desconto10.jpeg" width="480" height="380">'
+                     break;    
+                   
+
+
+            
+            }
+        },2400);
+        setTimeout()
         
         return alert ("voce venceu!")
         
@@ -187,11 +222,11 @@ function sobeImagens(){
     PerdaDeDesconto = letrasErradas.length + clicados
     console.log (PerdaDeDesconto)
 
-    switch(PerdaDeDesconto+1){
+    switch(letrasErradas.length+1){
         case 6:
-            var imagem = document.querySelector("#HomemDeFerro");
+           /* var imagem = document.querySelector("#HomemDeFerro");
             imagem.setAttribute('src', 'voce perdeu.png');
-            break;
+            break; */
         case 5:
             var imagem = document.querySelector("#HomemDeFerro");
             imagem.setAttribute('src', '5.png');
@@ -232,9 +267,7 @@ function mostraDicas(){
 
             switch (clicados) {
                 case 1:
-                   /* var adiciona = document.querySelector("#tituloDicas");
-                    var texto = document.createTextNode("dica1");
-                    adiciona.appendChild(texto); */
+                   
 
                     exibirDicas.innerHTML='<p>' + dicas[indexPalavra].dica1 + '</p>'
                     
@@ -247,10 +280,8 @@ function mostraDicas(){
                     exibirDicas.innerHTML='<p>' + dicas[indexPalavra].dica1 + '</p>' + '\n' + '<p>' + dicas[indexPalavra].dica2 + '</p>' + '\n' + '<p>' + dicas[indexPalavra].dica3 + '</p>'
                 break;
             }
-            
-            
-
-
+         
+           
 
         }
 
