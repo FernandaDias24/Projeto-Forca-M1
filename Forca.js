@@ -4,7 +4,7 @@ var palavraTela = []
 var todasAsLetras=[]
 var letra
 var PerdaDeDesconto
-var msgDeErro
+var certas = 0
 
 const listapalavras = [                                                      //lista os produtos para o jogo da forca
     "DRONE",  "ALEXA", "SMARTWATCH", "SMARTPHONE", "PROJETOR", "NOTEBOOK", "HEADSET"
@@ -106,7 +106,7 @@ function habBotao(){
 
 
 function bloqueia(){
-    
+
     document.getElementById("A").disabled = true;
     document.getElementById("B").disabled = true;
     document.getElementById("C").disabled = true;
@@ -163,6 +163,40 @@ function validaLetras(){                                                   //Val
             if (letra == letrasCorretas[index]) {                            // posicona no vetor as letras corretas
                 palavraTela[index]   = letra
 
+                certas ++
+
+                console.log("letras certas",certas)
+                switch(certas){
+                    case 1:
+                        document.getElementById("msgErro").innerHTML =  "BOA";
+                       
+                     break;
+                        
+                    ; 
+                    case 2:
+                        document.getElementById("msgErro").innerHTML =  "Continue assim!";
+                        
+                        break; 
+                    ; 
+                    case 3:
+                        document.getElementById("msgErro").innerHTML =  "Acertou!";
+                        break; 
+                      
+                    ; 
+                    case 4:
+                        document.getElementById("msgErro").innerHTML =  "Era essa letre mesmo";
+                        break; 
+                    ; 
+                    case 5:
+                        document.getElementById("msgErro").innerHTML =  "Falta pouco";
+                        break; 
+                        
+                
+                }
+
+
+                             
+
             }
             
             else{
@@ -181,19 +215,9 @@ function validaLetras(){                                                   //Val
                   
         letrasErradas.push(letra)        
         //alert ("Letra - " + letra + " - não existe")
-            
-        
-        }
 
 
 
-
-        document.getElementById("palavraFormada").innerHTML = palavraTela.join("  ");             //Insere as corretas e incorretas em tela
-
-        document.getElementById("erradas").innerHTML =  letrasErradas;
-        console.log(letrasErradas.length)
-        
-        
         switch(letrasErradas.length){
             case 1:
                 document.getElementById("msgErro").innerHTML =  "Tente novamente";
@@ -235,6 +259,20 @@ function validaLetras(){                                                   //Val
 
         
         }
+          
+        
+        }
+
+
+
+
+        document.getElementById("palavraFormada").innerHTML = palavraTela.join("  ");             //Insere as corretas e incorretas em tela
+
+        document.getElementById("erradas").innerHTML =  letrasErradas;
+        
+        
+        
+        
         
         
 
@@ -299,7 +337,7 @@ function validaLetras(){                                                   //Val
 function sobeImagens(){
 
     PerdaDeDesconto = letrasErradas.length + clicados
-    console.log (PerdaDeDesconto)
+    
 
     switch(letrasErradas.length+1){
         case 6:
@@ -368,6 +406,6 @@ function mostraDicas(){
 
     });
 
-    console.log (PerdaDeDesconto)
+    console.log ("desconto perdido" ,PerdaDeDesconto)
     
 }  
