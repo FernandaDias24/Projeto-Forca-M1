@@ -2,7 +2,7 @@
     margin: 0;
     box-sizing: border-box;
 }
-.alfabeto {
+.alfabeto { /*style alfabeto*/
     width: 30px;
     height: 30px;
     margin: 3px;
@@ -15,7 +15,7 @@ body{
     margin-top: 10px; 
     background-color: rgb(89, 100, 100)
 }
-#cabecalho{
+#cabecalho{ /*style container img*/
     display: flex;
     justify-content: center;
     align-items: center;
@@ -23,7 +23,7 @@ body{
     flex-direction: column;
     color: blanchedalmond;
 }
-#imagem{
+#imagem{ /*style background img*/
    /* background-image: url("HomemDeFerroFundo.png"); */
     background-repeat: no-repeat;
     width: 253px;
@@ -32,7 +32,7 @@ body{
     
 }
  
-#HomemDeFerro{
+#HomemDeFerro{ /*style homem de ferro*/
     max-width: 100%;
    
 }
@@ -43,27 +43,27 @@ body{
     text-align: center;
 } */
 
-#palavraFormada{
+#palavraFormada{ /*style palavra*/
     color: blanchedalmond;
     text-align: center;
     margin-top: 50px;
     margin-bottom: 50px;
     
 }
-.letras{
+.letras{  /*style alinhamento letras*/
     text-align: center;
 
 }
-#jogar{
+#jogar{ /*div botão jogar*/
     text-align: center;
     margin-top: 50px;
    
 }
-#botaoJogar{
+#botaoJogar{ /*fonte botão*/
     font-size: 17px;
 }
 
-#erradas{
+#erradas{ /*style letras erradas*/
     color: blanchedalmond;
     margin: 15px;
     font-size: 20px;
@@ -71,10 +71,10 @@ body{
 #textoauxiliar{
     color: blanchedalmond;
 }
-#lampada{
+#lampada{ /*tamanho imagem dica*/
     width: 30px;
 }
-#dicas{
+#dicas{ /*style dicas*/
     color: blanchedalmond;
     margin: 15px;
     font-size: 20px;
