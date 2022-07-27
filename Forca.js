@@ -4,6 +4,7 @@ var palavraTela = []
 var todasAsLetras=[]
 var letra
 var PerdaDeDesconto
+var msgDeErro
 
 const listapalavras = [                                                      //lista os produtos para o jogo da forca
     "DRONE",  "ALEXA", "SMARTWATCH", "SMARTPHONE", "PROJETOR", "NOTEBOOK", "HEADSET"
@@ -105,6 +106,7 @@ function habBotao(){
 
 
 function bloqueia(){
+    
     document.getElementById("A").disabled = true;
     document.getElementById("B").disabled = true;
     document.getElementById("C").disabled = true;
@@ -153,6 +155,7 @@ function validaLetras(){                                                   //Val
 
 
         erradas = 0
+        
 
 
         for (let index = 0; index < letrasCorretas.length; index++) {
@@ -184,59 +187,64 @@ function validaLetras(){                                                   //Val
 
 
 
-        switch(letrasErrada.length){
-            case 1:
-                document.getElementById("msgErro").innerHTML =  "Essa não tem!";
-                
-            ; 
-            case 2:
-                document.getElementById("msgErro").innerHTML =  "Quase :(";
-              
-            ; 
-            case 3:
-                document.getElementById("msgErro").innerHTML =  "Letra errada";
-              
-            ; 
-            case 4:
-                document.getElementById("msgErro").innerHTML =  "Deve ser outra palavra";
-                
-            ; 
-            case 5:
-                document.getElementById("msgErro").innerHTML =  "Não foi dessa vez";
-                
-            ; 
-            
-
-
-        
-        }
-
-
-
-
-
-
 
         document.getElementById("palavraFormada").innerHTML = palavraTela.join("  ");             //Insere as corretas e incorretas em tela
 
         document.getElementById("erradas").innerHTML =  letrasErradas;
+        console.log(letrasErradas.length)
+        
+        
+        switch(letrasErradas.length){
+            case 1:
+                document.getElementById("msgErro").innerHTML =  "Tente novamente";
+               
+             break;
+                
+            ; 
+            case 2:
+                document.getElementById("msgErro").innerHTML =  "Quase";
+                
+                break; 
+            ; 
+            case 3:
+                document.getElementById("msgErro").innerHTML =  "Letra Errada";
+                break; 
+              
+            ; 
+            case 4:
+                document.getElementById("msgErro").innerHTML =  "Deve ser outra palavra";
+                break; 
+            ; 
+            case 5:
+
+                document.getElementById("msgErro").innerHTML =  "Não foi dessa vez";
+                var imagem = document.querySelector("#imagem");
+        
+                imagem.innerHTML ='<img src="gif tonystark.gif" width="480" height="380">'  
+                setTimeout(function(){
+                    imagem.innerHTML ='<img src="voce perdeu.jpeg" width="480" height="380">'
+                },2400);
+
+                setTimeout()
+                bloqueia() 
+        
+                
+                break; 
+            ; 
+        
+
+        
+        }
+        
+        
+
 
         sobeImagens(); 
 
 
     }
-    else{
-        var imagem = document.querySelector("#imagem");
-        
-        imagem.innerHTML ='<img src="gif tonystark.gif" width="480" height="380">'  
-        setTimeout(function(){
-            imagem.innerHTML ='<img src="voce perdeu.jpeg" width="480" height="380">'
-        },2400);
-        setTimeout()
-        bloqueia()
-        return 
-        
-    }
+
+   
 
     if (JSON.stringify(palavraTela)==JSON.stringify(letrasCorretas)) {               // valida que a palavra está formada corretamente
         
@@ -273,6 +281,7 @@ function validaLetras(){                                                   //Val
             
             }
         },2400);
+
         bloqueia()
         setTimeout()
         
