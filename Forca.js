@@ -101,6 +101,7 @@ function habBotao(){
     document.getElementById("X").disabled = false;
     document.getElementById("Y").disabled = false;
     document.getElementById("Z").disabled = false;
+    document.getElementById("botaoDica").disabled = false;
 
 }
 
@@ -243,14 +244,14 @@ function validaLetras(){                                                   //Val
 
                 document.getElementById("msgErro").innerHTML =  "Não foi dessa vez";
                 var imagem = document.querySelector("#imagem");
-        
+        bloqueia() 
                 imagem.innerHTML ='<img src="gif tonystark.gif" width="480" height="380">'  
                 setTimeout(function(){
                     imagem.innerHTML ='<img src="voce perdeu.jpeg" width="480" height="380">'
                 },2400);
 
                 setTimeout()
-                bloqueia() 
+                
         
                 
                 break; 
