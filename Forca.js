@@ -178,12 +178,42 @@ function validaLetras(){                                                   //Val
                   
         letrasErradas.push(letra)        
         //alert ("Letra - " + letra + " - não existe")
+            
         
         }
 
 
 
-        //  console.log(letrasCorretas.indexOf (letra) )
+        switch(letrasErrada.length){
+            case 1:
+                document.getElementById("msgErro").innerHTML =  "Essa não tem!";
+                
+            ; 
+            case 2:
+                document.getElementById("msgErro").innerHTML =  "Quase :(";
+              
+            ; 
+            case 3:
+                document.getElementById("msgErro").innerHTML =  "Letra errada";
+              
+            ; 
+            case 4:
+                document.getElementById("msgErro").innerHTML =  "Deve ser outra palavra";
+                
+            ; 
+            case 5:
+                document.getElementById("msgErro").innerHTML =  "Não foi dessa vez";
+                
+            ; 
+            
+
+
+        
+        }
+
+
+
+
 
 
 
