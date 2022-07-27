@@ -184,7 +184,7 @@ function validaLetras(){                                                   //Val
 
                 
                 case 0:
-                    imagem.innerHTML ='<img src="desconto40.jpeg" width="480" height="380">'
+                    imagem.innerHTML ='<img src="desconto50.jpeg" width="480" height="380">'
                      break
                 case 1:
                     imagem.innerHTML ='<img src="desconto40.jpeg" width="480" height="380">'
@@ -195,7 +195,7 @@ function validaLetras(){                                                   //Val
                 case 3:
                     imagem.innerHTML ='<img src="desconto20.jpeg" width="480" height="380">'
                      break;
-                case 3:
+                case 4:
                     imagem.innerHTML ='<img src="desconto10.jpeg" width="480" height="380">'
                      break;    
                    
