@@ -103,6 +103,41 @@ function habBotao(){
 
 }
 
+
+function bloqueia(){
+    document.getElementById("A").disabled = true;
+    document.getElementById("B").disabled = true;
+    document.getElementById("C").disabled = true;
+    document.getElementById("D").disabled = true;
+    document.getElementById("E").disabled = true;
+    document.getElementById("F").disabled = true;
+    document.getElementById("G").disabled = true;
+    document.getElementById("H").disabled = true;
+    document.getElementById("I").disabled = true;
+    document.getElementById("J").disabled = true;
+    document.getElementById("K").disabled = true;
+    document.getElementById("L").disabled = true;
+    document.getElementById("M").disabled = true;
+    document.getElementById("N").disabled = true;
+    document.getElementById("O").disabled = true;
+    document.getElementById("P").disabled = true;
+    document.getElementById("Q").disabled = true;
+    document.getElementById("R").disabled = true;
+    document.getElementById("S").disabled = true;
+    document.getElementById("T").disabled = true;
+    document.getElementById("U").disabled = true;
+    document.getElementById("V").disabled = true;
+    document.getElementById("W").disabled = true;
+    document.getElementById("X").disabled = true;
+    document.getElementById("Y").disabled = true;
+    document.getElementById("Z").disabled = true;
+    document.getElementById("botaoDica").disabled = true;
+
+}
+
+
+
+
 function acaoBotao(clicado) {                                              //Retorna o valor da letra clicada e chama outra função
     letra=clicado
     
@@ -168,8 +203,8 @@ function validaLetras(){                                                   //Val
             imagem.innerHTML ='<img src="voce perdeu.jpeg" width="480" height="380">'
         },2400);
         setTimeout()
-
-        return alert ("o jogo acabou")
+        bloqueia()
+        return 
         
     }
 
@@ -197,13 +232,18 @@ function validaLetras(){                                                   //Val
                      break;
                 case 4:
                     imagem.innerHTML ='<img src="desconto10.jpeg" width="480" height="380">'
-                     break;    
+                     break;
+                case 4:
+                imagem.innerHTML ='<img src="desconto10.jpeg" width="480" height="380">'
+                break; 
+
                    
 
 
             
             }
         },2400);
+        bloqueia()
         setTimeout()
         
         return alert ("voce venceu!")
