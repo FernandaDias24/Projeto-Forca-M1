@@ -1,5 +1,89 @@
+*{  padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.alfabeto {
+    width: 30px;
+    height: 30px;
+    margin: 3px;
+    border-radius: 10px;
+    font-weight: 600;
+}
 body{
-    background-color: #4f4c4c;
+    width: 100vw; 
+    height: 90vh; 
+    margin-top: 10px; 
+    background-color: rgb(89, 100, 100)
+}
+#cabecalho{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    color: blanchedalmond;
+}
+#imagem{
+   /* background-image: url("HomemDeFerroFundo.png"); */
+    background-repeat: no-repeat;
+    width: 253px;
+    height: 502px;
+    padding: 1%;
+    
+}
+ 
+#HomemDeFerro{
+    max-width: 100%;
+   
+}
+
+
+/* h1{
+    color: aliceblue;
+    text-align: center;
+} */
+
+#palavraFormada{
+    color: blanchedalmond;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    
+}
+.letras{
+    text-align: center;
+
+}
+#jogar{
+    text-align: center;
+    margin-top: 50px;
+   
+}
+#botaoJogar{
+    font-size: 17px;
+}
+
+#erradas{
+    color: blanchedalmond;
+    margin: 15px;
+    font-size: 20px;
+}
+#textoauxiliar{
+    color: blanchedalmond;
+}
+#lampada{
+    width: 30px;
+}
+#dicas{
+    color: blanchedalmond;
+    margin: 15px;
+    font-size: 20px;
+}
+
+#dicasNumeradas {
+    height: 100px;
+    margin: 25px;
+
 }
 .Titulo{
     position: relative;
