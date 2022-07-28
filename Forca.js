@@ -170,58 +170,57 @@ function validaLetras(){                                                   //Val
                 console.log("letras certas",certas)
                 switch(certas){
                     case 1:
-                        document.getElementById("msgErro").innerHTML =  "BOA";
+                        document.getElementById("msgErro").innerHTML =  '<div style=" width: 200px; text-align : center; background-color: rgba(255, 255, 255, 0.466); color:green" > BOA </div>';
                        
                      break;
                         
                     ; 
                     case 2:
-                        document.getElementById("msgErro").innerHTML =  "Continue assim!";
+                        document.getElementById("msgErro").innerHTML =  '<div style=" width: 200px; text-align : center; background-color: rgba(255, 255, 255, 0.466); color:green" >Continue Assim </div>';
                         
                         break; 
                     ; 
                     case 3:
-                        document.getElementById("msgErro").innerHTML =  "Acertou!";
+                        document.getElementById("msgErro").innerHTML = '<div style=" width: 200px; text-align : center; background-color: rgba(255, 255, 255, 0.466); color:green" > Acertou </div>';
                         break; 
                       
                     ; 
                     case 4:
-                        document.getElementById("msgErro").innerHTML =  "Era essa letre mesmo";
+                        document.getElementById("msgErro").innerHTML =  '<div style=" width: 200px; text-align : center; background-color: rgba(255, 255, 255, 0.466); color:green" > Era essa letra mesmo </div>';
                         break; 
                     ; 
 
                     case 5:
-                        document.getElementById("msgErro").innerHTML =  "Isso!";
+                        document.getElementById("msgErro").innerHTML =  '<div style=" width: 200px; text-align : center; background-color: rgba(255, 255, 255, 0.466); color:green" > Isso! </div>';
                         break; 
                     ;    
                         
                     case 6:
-                        document.getElementById("msgErro").innerHTML =  "Falta pouco";
+                        document.getElementById("msgErro").innerHTML =  '<div style=" width: 200px; text-align : center; background-color: rgba(255, 255, 255, 0.466); color:green" > Falta pouco </div>';
                         break; 
                     ;
                     case 7:
-                        document.getElementById("msgErro").innerHTML =  "BOA";
+                        document.getElementById("msgErro").innerHTML =  '<div style=" width: 200px; text-align : center; background-color: rgba(255, 255, 255, 0.466); color:green" > BOA </div>';
                        
                      break;
                         
                     ; 
                     case 8:
-                        document.getElementById("msgErro").innerHTML =  "Continue assim!";
+                        document.getElementById("msgErro").innerHTML =   '<div style=" width: 200px; text-align : center; background-color: rgba(255, 255, 255, 0.466); color:green" >Continue Assim </div>';
                         
                         break; 
                     ; 
                     case 9:
-                        document.getElementById("msgErro").innerHTML =  "Acertou!";
-                        break; 
+                        document.getElementById("msgErro").innerHTML =  '<div style=" width: 200px; text-align : center; background-color: rgba(255, 255, 255, 0.466); color:green" > Acertou </div>';
                       
                     ; 
                     case 10:
-                        document.getElementById("msgErro").innerHTML =  "Era essa letre mesmo";
+                        document.getElementById("msgErro").innerHTML =   '<div style=" width: 200px; text-align : center; background-color: rgba(255, 255, 255, 0.466); color:green" > Era essa letra mesmo </div>';
                         break; 
                     ; 
 
                     case 11:
-                        document.getElementById("msgErro").innerHTML =  "Isso!";
+                        document.getElementById("msgErro").innerHTML =   '<div style=" width: 200px; text-align : center; background-color: rgba(255, 255, 255, 0.466); color:green" > Isso! </div>';
                         break; 
                        
                 
@@ -253,28 +252,28 @@ function validaLetras(){                                                   //Val
 
         switch(letrasErradas.length){
             case 1:
-                document.getElementById("msgErro").innerHTML =  "Tente novamente";
+                document.getElementById("msgErro").innerHTML =  '<div style=" width: 200px; text-align : center; background-color: rgba(255, 255, 255, 0.466); color:rgb(196, 28, 28)" > Tente novamente </div>';
                
              break;
                 
             ; 
             case 2:
-                document.getElementById("msgErro").innerHTML =  "Quase";
+                document.getElementById("msgErro").innerHTML =  '<div style=" width: 200px; text-align : center; background-color: rgba(255, 255, 255, 0.466); color:rgb(196, 28, 28)" > Quase! </div>';
                 
                 break; 
             ; 
             case 3:
-                document.getElementById("msgErro").innerHTML =  "Letra Errada";
+                document.getElementById("msgErro").innerHTML =  '<div style=" width: 200px; text-align : center; background-color: rgba(255, 255, 255, 0.466); color:rgb(196, 28, 28)" > Letra Errada </div>';
                 break; 
               
             ; 
             case 4:
-                document.getElementById("msgErro").innerHTML =  "Deve ser outra palavra";
+                document.getElementById("msgErro").innerHTML =  '<div style=" width: 200px; text-align : center; background-color: rgba(255, 255, 255, 0.466); color:rgb(196, 28, 28)" > Deve ser outra letra.. </div>';
                 break; 
             ; 
             case 5:
 
-                document.getElementById("msgErro").innerHTML =  "Não foi dessa vez";
+                document.getElementById("msgErro").innerHTML =  '<div style=" width: 200px; text-align : center; background-color: rgba(255, 255, 255, 0.466); color:rgb(196, 28, 28)" > Não foi dessa vez! </div>';
                 var imagem = document.querySelector("#imagem");
         bloqueia() 
                 imagem.innerHTML ='<img src="gif tonystark.gif" width="480" height="380">'  
