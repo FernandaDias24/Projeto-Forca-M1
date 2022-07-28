@@ -313,6 +313,17 @@ function validaLetras(){                                                   //Val
 
 
     }
+<<<<<<< HEAD
+    else{
+        var imagem = document.querySelector("#imagem");
+        
+        imagem.innerHTML ='<img src="gif tonystark.gif" width="200">'  
+        setTimeout(function(){
+            imagem.innerHTML ='<img src="voce perdeu.jpeg" width="200">'
+        },2400);
+        setTimeout()
+=======
+>>>>>>> 25fa81bbe946257805fe1dfc79bea04955050c03
 
    
 
