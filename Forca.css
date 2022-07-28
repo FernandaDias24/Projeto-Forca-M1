@@ -16,7 +16,7 @@ header{
     background-color: #4f4c4c;
 }
 .box0{
-    display: flex;
+    
 
 
 }
@@ -25,11 +25,17 @@ header{
    
 }
 
+#opcoes{
+    position: absolute;
+    top: 60px;
+    right: 5%;
+}
+
 
 nav{
     position: absolute;
     top: 60px;
-    right: 0px;
+    right: 20%;
 }
 nav li{
     display: inline;
