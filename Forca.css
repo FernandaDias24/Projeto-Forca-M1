@@ -193,7 +193,7 @@ nav a{
 
 #erradas{ /*style letras erradas*/
     color: blanchedalmond;
-    margin: 0px;
+    margin: 15px;
     font-size: 20px;
     
 
@@ -210,6 +210,7 @@ nav a{
     font-size: 20px;
     font-weight: bold;
     font-family: 'robot';
+    margin: 15px;
 }
 #lampada{ /*tamanho imagem dica*/
     width: 30px;
@@ -225,8 +226,11 @@ nav a{
 }
 
 #dicasNumeradas {
-    height: 100px;
-    margin: 25px;
+    height: 150px;
+    width: 300px;
+
+    border: 6px solid #00c2cb;
+    border-radius: 10px;
 
 }
 
