@@ -6,8 +6,8 @@ body{
 
 .Titulo{
     position: relative;
-    width: 1000px;
-    height: 190px;
+    width: 1200px;
+    height: 120px;
     margin: 0 auto;
 }
 
@@ -21,38 +21,76 @@ header{
 }
 
 .botaoJogo{
-    background-color: rgba(255, 255, 0, 0.942);
+   
+}
 
-}
-.Titulo h1{
-    font-family: keania one;
-    background-color: #fffdfd;
-    border: 10px solid #d9d9d9;
-    border-radius: 20px;
-    margin: 0 0 0 10px;
-}
 
 nav{
-    position: relative;
-    top: 10px;
+    position: absolute;
+    top: 60px;
+    right: 0px;
 }
 nav li{
     display: inline;
-    color: black;
-    font-weight: bold;
+    
+    
     font-size: 22px;
-    padding: 5px 5px;
+    padding: 8px 8px;
     margin: 0 0 0 100px;
+    color: #03e9f4;
 
-    background-color: #fffdfd;
-    border: 6px solid #00c2cb;
-    border-radius: 20px;
 
+    font-size: 14px;
+  
+    text-decoration: none;
+  
+    text-transform: uppercase;
+  
+    overflow: hidden;
+  
+    transition: 0.2s;
+  
+    margin-top: 40px;
+  
+    letter-spacing: 4px;
+
+   background-color: rgba(255, 255, 255, 0.11);
+   
+   
+    border-radius: 8px;
+
+    
+
+
+}
+nav li a{
+    text-decoration: none;
+    color: #03e9f4;
 }
 
 nav a{
     text-decoration: none;
 }
+
+nav li:hover {
+    color: #fff;
+  
+    background: #03e9f4;
+  
+  
+    border-radius: 5px;
+  
+    box-shadow: 0 0 5px #03e9f4,
+  
+                0 0 25px #03e9f4,
+  
+                0 0 50px #03e9f4,
+  
+                0 0 100px #03e9f4;
+  
+  }
+
+
 .Produtos{
     width: 940px;
     margin: 0 auto;
@@ -84,6 +122,24 @@ nav a{
     font-family: 'inter';
 }
 
+.regra{
+    font-size: 22px;
+    font-weight: bold;
+    font-family: 'inter';
+    color: #fffdfd;
+
+    margin-top: 5%;
+}
+
+.descricaoJogo{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'inter';
+    color: #fffdfd;
+
+    margin: 10% 15% 0 15%;
+}
+
 .marca{
     font-style: 16px;
     font-weight: bold;
@@ -91,12 +147,12 @@ nav a{
 }
 
 .descricao{
-    font-style: 16px;
+    font-size: 16px;
     font-family: 'robot';
 }
 
 .preco{
-    font-style: 16px;
+    font-size: 16px;
     font-weight: bold;
     font-family: 'robot';
 }
@@ -124,7 +180,7 @@ nav a{
 .box2{
     flex-grow: 1;
     flex-direction: column;
-    margin-left: 10px;
+    margin-left: 130px;
 }
 #imagem{ /*div img*/
    /* background-image: url("HomemDeFerroFundo.png"); */
@@ -142,7 +198,7 @@ nav a{
 }
  
 #HomemDeFerro{ /*style homem de ferro*/
-    max-width: 20%;
+    max-width: 40%;
    
 }
 
@@ -153,13 +209,16 @@ nav a{
 } */
 .box3{
     flex-grow: 1;
+    margin-right: 30px;
 }
 #palavraFormada{ /*style palavra*/
     color: blanchedalmond;
     text-align: center;
     margin-top: 50px;
     margin-bottom: 50px;
-    
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'robot';
 }
 .letras{  /*style alinhamento letras*/
     text-align: center;
@@ -177,7 +236,7 @@ nav a{
 
 #erradas{ /*style letras erradas*/
     color: blanchedalmond;
-    margin: 0px;
+    margin: 15px;
     font-size: 20px;
     
 
@@ -185,12 +244,16 @@ nav a{
 #msgErro{
     color: blanchedalmond;
     margin: 15px;
-    font-size: 35px;
+    font-size: 20px;
 
 }
 
 #textoauxiliar{
     color: blanchedalmond;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'robot';
+    margin: 15px;
 }
 #lampada{ /*tamanho imagem dica*/
     width: 30px;
@@ -199,16 +262,22 @@ nav a{
     color: blanchedalmond;
     margin: 15px;
     margin-top: 60px;
+
     font-size: 20px;
+    font-family: 'robot';
+    font-weight: bold;
 }
 
 #dicasNumeradas {
-    height: 100px;
-    margin: 25px;
+    height: 150px;
+    width: 300px;
+
+    border: 6px solid #00c2cb;
+    border-radius: 10px;
 
 }
 
-//*{  padding: 0;
+/*{  padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
