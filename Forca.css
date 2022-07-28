@@ -6,7 +6,7 @@ body{
 
 .Titulo{
     position: relative;
-    width: 950px;
+    width: 1000px;
     height: 190px;
     margin: 0 auto;
 }
@@ -45,7 +45,7 @@ nav li{
     margin: 0 0 0 100px;
 
     background-color: #fffdfd;
-    border: 10px solid #00c2cb;
+    border: 6px solid #00c2cb;
     border-radius: 20px;
 
 }
@@ -74,7 +74,7 @@ nav a{
     padding: 20px 20px;
     box-sizing: border-box;
 
-    border: 10px solid #00c2cb;
+    border: 6px solid #00c2cb;
     border-radius: 20px;
     
 }
