@@ -247,7 +247,7 @@ function validaLetras(){                                                   //Val
                   
         letrasErradas.push(letra)        
         //alert ("Letra - " + letra + " - não existe")
-
+        document.getElementById("erradas").innerHTML =  letrasErradas;
 
 
         switch(letrasErradas.length){
@@ -300,7 +300,7 @@ function validaLetras(){                                                   //Val
 
         document.getElementById("palavraFormada").innerHTML = palavraTela.join("  ");             //Insere as corretas e incorretas em tela
 
-        document.getElementById("erradas").innerHTML =  letrasErradas;
+        
         
         
         

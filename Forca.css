@@ -97,6 +97,72 @@ nav li:hover {
   }
 
 
+
+#irparajogo
+{
+    display: inline;
+    
+    
+    font-size: 22px;
+    padding: 8px 8px;
+    margin: 100px;
+    color: #03e9f4;
+
+
+    font-size: 25px;
+  
+    text-decoration: none;
+  
+    text-transform: uppercase;
+  
+    overflow: hidden;
+  
+    transition: 0.2s;
+  
+     
+    letter-spacing: 4px;
+
+    background-color: rgba(255, 255, 255, 0.11);
+   
+   
+    border-radius: 8px;
+}
+  #irparajogo a{
+    text-decoration: none;
+    color: #03e9f4;
+}
+
+nav a{
+    text-decoration: none;
+}
+
+#irparajogo:hover {
+    color: #fff;
+  
+    background: #03e9f4;
+  
+  
+    border-radius: 5px;
+  
+    box-shadow: 0 0 5px #03e9f4,
+  
+                0 0 25px #03e9f4,
+  
+                0 0 50px #03e9f4,
+  
+                0 0 100px #03e9f4;
+  
+  }
+#irparajogo a:hover {
+    color: #fff;
+  
+   
+  }
+
+
+
+
+
 .Produtos{
     width: 940px;
     margin: 0 auto;
@@ -143,7 +209,7 @@ nav li:hover {
     font-family: 'inter';
     color: #fffdfd;
 
-    margin: 10% 15% 0 15%;
+    margin: 5% 15% 0 15%;
 }
 
 .marca{
@@ -237,8 +303,10 @@ nav li:hover {
     text-align: center;
 } */
 .box3{
-    flex-grow: 1;
+    width: 410px;
+    
     margin-right: 30px;
+
 }
 #palavraFormada{ /*style palavra*/
     color: #03e9f4;
