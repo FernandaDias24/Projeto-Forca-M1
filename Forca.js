@@ -278,7 +278,7 @@ function validaLetras(){                                                   //Val
         bloqueia() 
                 imagem.innerHTML ='<img src="gif tonystark.gif" width="480" height="380">'  
                 setTimeout(function(){
-                    imagem.innerHTML ='<img src="voce perdeu.jpeg" width="480" height="380">'
+                    imagem.innerHTML ='<img src="voce perdeu.jpeg" width="480" height="480">'
                 },2400);
 
                 setTimeout()
@@ -327,36 +327,36 @@ function validaLetras(){                                                   //Val
 
                 
                 case 0:
-                    imagem.innerHTML ='<img src="desconto50.jpeg" width="480" height="380">'
+                    imagem.innerHTML ='<img src="desconto50.jpeg" width="480" height="480">'
                      break
                 case 1:
-                    imagem.innerHTML ='<img src="desconto40.jpeg" width="480" height="380">'
+                    imagem.innerHTML ='<img src="desconto40.jpeg" width="480" height="480">'
                      break;
                 case 2:
-                    imagem.innerHTML ='<img src="desconto30.jpeg" width="480" height="380">'
+                    imagem.innerHTML ='<img src="desconto30.jpeg" width="480" height="480">'
                      break;
                 case 3:
-                    imagem.innerHTML ='<img src="desconto20.jpeg" width="480" height="380">'
+                    imagem.innerHTML ='<img src="desconto20.jpeg" width="480" height="480">'
                      break;
                 case 4:
-                    imagem.innerHTML ='<img src="desconto10.jpeg" width="480" height="380">'
+                    imagem.innerHTML ='<img src="desconto10.jpeg" width="480" height="480">'
                      break;
                 case 4:
-                imagem.innerHTML ='<img src="desconto10.jpeg" width="480" height="380">'
+                imagem.innerHTML ='<img src="desconto10.jpeg" width="480" height="480">'
                 break; 
 
                 case 5:
-                    imagem.innerHTML ='<img src="desconto0.jpeg" width="480" height="380">'
+                    imagem.innerHTML ='<img src="desconto0.jpeg" width="480" height="480">'
                     break; 
                 case 6:
-                    imagem.innerHTML ='<img src="desconto0.jpeg" width="480" height="380">'
+                    imagem.innerHTML ='<img src="desconto0.jpeg" width="480" height="480">'
                     break; 
                 
                 case 7:
-                    imagem.innerHTML ='<img src="desconto0.jpeg" width="480" height="380">'
+                    imagem.innerHTML ='<img src="desconto0.jpeg" width="480" height="480">'
                     break;
                 case 8:
-                imagem.innerHTML ='<img src="desconto0.jpeg" width="480" height="380">'
+                imagem.innerHTML ='<img src="desconto0.jpeg" width="480" height="480">'
                 break;  
 
                    
