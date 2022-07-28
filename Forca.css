@@ -137,7 +137,7 @@ nav a{
 .box2{
     flex-grow: 1;
     flex-direction: column;
-    margin-left: 10px;
+    margin-left: 30px;
 }
 #imagem{ /*div img*/
    /* background-image: url("HomemDeFerroFundo.png"); */
