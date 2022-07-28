@@ -404,7 +404,7 @@ function sobeImagens(){
             break;
         case 2:
             var imagem = document.querySelector("#HomemDeFerro");
-            imagem.setAttribute('src', '2.png');
+            imagem.setAttribute('src', 'HomemDeFErroFundo1.png');
             //document.getElementById("imagem").style.background = "url('./2.png')";
             break;       
         /* default:
