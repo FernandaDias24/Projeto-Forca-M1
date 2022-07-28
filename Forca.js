@@ -3,7 +3,7 @@ var letrasErradas=[]
 var palavraTela = []
 var todasAsLetras=[]
 var letra
-var PerdaDeDesconto
+var PerdaDeDesconto = 0
 var certas = 0
 
 const listapalavras = [                                                      //lista os produtos para o jogo da forca
@@ -248,6 +248,7 @@ function validaLetras(){                                                   //Val
         letrasErradas.push(letra)        
         //alert ("Letra - " + letra + " - não existe")
         document.getElementById("erradas").innerHTML =  letrasErradas;
+        document.getElementById("desconto").innerHTML = "Desconto Atual : " +  (50- 10 * (PerdaDeDesconto+1)) + "%" ; 
 
 
         switch(letrasErradas.length){
@@ -299,7 +300,7 @@ function validaLetras(){                                                   //Val
 
 
         document.getElementById("palavraFormada").innerHTML = palavraTela.join("  ");             //Insere as corretas e incorretas em tela
-
+       
         
         
         
@@ -421,7 +422,9 @@ var clique = 1;
 var clicados = 0
  
 function mostraDicas(){
-   
+    PerdaDeDesconto = letrasErradas.length + clicados
+    document.getElementById("desconto").innerHTML = "Desconto Atual : " +  (50- 10 * (PerdaDeDesconto+1)) + "%" ;
+    
     clicados = clique++
     var  exibirDicas = document.querySelector("#dicasNumeradas")  
     dicas.forEach(object =>{
