@@ -163,9 +163,9 @@ function validaLetras(){                                                   //Val
     else{
         var imagem = document.querySelector("#imagem");
         
-        imagem.innerHTML ='<img src="gif tonystark.gif" width="480" height="380">'  
+        imagem.innerHTML ='<img src="gif tonystark.gif" width="200">'  
         setTimeout(function(){
-            imagem.innerHTML ='<img src="voce perdeu.jpeg" width="480" height="380">'
+            imagem.innerHTML ='<img src="voce perdeu.jpeg" width="200">'
         },2400);
         setTimeout()
 

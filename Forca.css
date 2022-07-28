@@ -1,18 +1,23 @@
 body{
     width: 100vw; 
     height: 90vh; 
-    margin-top: 10px; 
     background-color: #4f4c4c
 }
 
 .Titulo{
     position: relative;
-    width: 940px;
+    width: 950px;
+    height: 190px;
     margin: 0 auto;
 }
 
 header{
     background-color: #4f4c4c;
+}
+.box0{
+    display: flex;
+
+
 }
 
 .botaoJogo{
@@ -51,8 +56,14 @@ nav a{
 .Produtos{
     width: 940px;
     margin: 0 auto;
-    padding: 50px 0;
+
 }
+
+.telaJogo{
+    margin: 0 auto;
+
+}
+
 .Produtos li{
     display: inline-block;
     text-align: center;
@@ -105,22 +116,33 @@ nav a{
     flex-direction: column;
     color: blanchedalmond;
 }
+.box1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.box2{
+    flex-grow: 1;
+    flex-direction: column;
+    margin-left: 10px;
+}
 #imagem{ /*div img*/
    /* background-image: url("HomemDeFerroFundo.png"); */
     background-repeat: no-repeat;
-    width: 253px;
-    height: 502px;
+    width: 120px;
     padding: 1%;
     display:flex;
     align-items: center;
    
     justify-content: center;
+
+    flex-grow: 4;
     
    
 }
  
 #HomemDeFerro{ /*style homem de ferro*/
-    max-width: 100%;
+    max-width: 20%;
    
 }
 
@@ -129,7 +151,9 @@ nav a{
     color: aliceblue;
     text-align: center;
 } */
-
+.box3{
+    flex-grow: 1;
+}
 #palavraFormada{ /*style palavra*/
     color: blanchedalmond;
     text-align: center;
@@ -139,6 +163,7 @@ nav a{
 }
 .letras{  /*style alinhamento letras*/
     text-align: center;
+
 
 }
 #jogar{ /*div botão jogar*/
@@ -152,8 +177,10 @@ nav a{
 
 #erradas{ /*style letras erradas*/
     color: blanchedalmond;
-    margin: 15px;
+    margin: 0px;
     font-size: 20px;
+    
+
 }
 #textoauxiliar{
     color: blanchedalmond;
@@ -164,6 +191,7 @@ nav a{
 #dicas{ /*style dicas*/
     color: blanchedalmond;
     margin: 15px;
+    margin-top: 60px;
     font-size: 20px;
 }
 
