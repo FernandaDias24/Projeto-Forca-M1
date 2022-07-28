@@ -137,7 +137,7 @@ nav a{
 .box2{
     flex-grow: 1;
     flex-direction: column;
-    margin-left: 30px;
+    margin-left: 130px;
 }
 #imagem{ /*div img*/
    /* background-image: url("HomemDeFerroFundo.png"); */
@@ -155,7 +155,7 @@ nav a{
 }
  
 #HomemDeFerro{ /*style homem de ferro*/
-    max-width: 35%;
+    max-width: 40%;
    
 }
 
@@ -166,6 +166,7 @@ nav a{
 } */
 .box3{
     flex-grow: 1;
+    margin-right: 30px;
 }
 #palavraFormada{ /*style palavra*/
     color: blanchedalmond;
