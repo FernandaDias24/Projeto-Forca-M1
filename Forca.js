@@ -32,28 +32,29 @@ const dicas = [
     },
 
     {
+    
         palavra: "SMARTPHONE",
-        dica1:" 1 - lorem ipsum ",
-        dica2:" 2 - lorem ipsum ",
-        dica3:" 3 - lorem ipsum ",
+        dica1:" 1 - Tenho acesso a internet ",
+        dica2:" 2 - Tenho touchscreen ",
+        dica3:" 3 - Estou sempre nas suas mãos ",
     },
     {
         palavra: "PROJETOR",
-        dica1:" 1 - lorem ipsum ",
-        dica2:" 2 - lorem ipsum ",
-        dica3:" 3 - lorem ipsum ",
+        dica1:" 1 -  Posso ser usado tanto pra trabalho como lazer",
+        dica2:" 2 - Posso deixar imagens grandes ",
+        dica3:" 3 - Transformo sua casa em uum cinema ",
     },
     {
         palavra: "NOTEBOOK",
-        dica1:" 1 - lorem ipsum ",
-        dica2:" 2 - lorem ipsum ",
-        dica3:" 3 - lorem ipsum ",
+        dica1:" 1 - Posso fazer multiplas tarefas ",
+        dica2:" 2 - Posso ser levado em uma mochila ",
+        dica3:" 3 - Posso ser touchscreen",
     },
     {
         palavra: "HEADSET",
-        dica1:" 1 - lorem ipsum ",
-        dica2:" 2 - lorem ipsum ",
-        dica3:" 3 - lorem ipsum ",
+        dica1:" 1 - Tenho tudo a ver com audio ",
+        dica2:" 2 - Você pode falar através de mim, ou não.. ",
+        dica3:" 3 - Fico na sua cabeça ",
     },
 ]
 

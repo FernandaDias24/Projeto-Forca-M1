@@ -1,7 +1,8 @@
 body{
     width: 100vw; 
     height: 90vh; 
-    background-color: #4f4c4c
+    background-color: #4f4c4c;
+    
 }
 
 .Titulo{
@@ -217,7 +218,7 @@ nav li:hover {
     padding: 1%;
     display:flex;
     align-items: top;
-    box-sizing: border-box;
+    
     justify-content: center;
 
     flex-grow: 4;
@@ -240,13 +241,23 @@ nav li:hover {
     margin-right: 30px;
 }
 #palavraFormada{ /*style palavra*/
-    color: blanchedalmond;
+    color: #03e9f4;
     text-align: center;
     margin-top: 50px;
     margin-bottom: 50px;
     font-size: 20px;
     font-weight: bold;
     font-family: 'robot';
+    text-shadow:0 0 5px #03e9f4,
+  
+    0 0 25px #03e9f4,
+
+    0 0 50px #03e9f4,
+
+    0 0 100px #03e9f4; ; 
+
+
+    
 }
 .letras{  /*style alinhamento letras*/
     text-align: center;
@@ -267,6 +278,7 @@ nav li:hover {
     margin: 15px;
     font-size: 20px;
     display: inline;
+    font-family: 'inter';
     
     
 
@@ -285,6 +297,7 @@ nav li:hover {
     font-family: 'robot';
     margin: 15px;
     display: inline;
+    
 }
 #lampada{ /*tamanho imagem dica*/
     width: 20px;
@@ -303,7 +316,8 @@ nav li:hover {
     height: 150px;
     width: 300px;
 
-    border: 6px solid #00c2cb;
+    border: 1px solid #00c2cb;
     border-radius: 10px;
-
+    padding: 5px;
+    
 }
