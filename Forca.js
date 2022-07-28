@@ -188,10 +188,41 @@ function validaLetras(){                                                   //Val
                         document.getElementById("msgErro").innerHTML =  "Era essa letre mesmo";
                         break; 
                     ; 
+
                     case 5:
+                        document.getElementById("msgErro").innerHTML =  "Isso!";
+                        break; 
+                    ;    
+                        
+                    case 6:
                         document.getElementById("msgErro").innerHTML =  "Falta pouco";
                         break; 
+                    ;
+                    case 7:
+                        document.getElementById("msgErro").innerHTML =  "BOA";
+                       
+                     break;
                         
+                    ; 
+                    case 8:
+                        document.getElementById("msgErro").innerHTML =  "Continue assim!";
+                        
+                        break; 
+                    ; 
+                    case 9:
+                        document.getElementById("msgErro").innerHTML =  "Acertou!";
+                        break; 
+                      
+                    ; 
+                    case 10:
+                        document.getElementById("msgErro").innerHTML =  "Era essa letre mesmo";
+                        break; 
+                    ; 
+
+                    case 11:
+                        document.getElementById("msgErro").innerHTML =  "Isso!";
+                        break; 
+                       
                 
                 }
 
@@ -313,6 +344,20 @@ function validaLetras(){                                                   //Val
                 case 4:
                 imagem.innerHTML ='<img src="desconto10.jpeg" width="480" height="380">'
                 break; 
+
+                case 5:
+                    imagem.innerHTML ='<img src="desconto0.jpeg" width="480" height="380">'
+                    break; 
+                case 6:
+                    imagem.innerHTML ='<img src="desconto0.jpeg" width="480" height="380">'
+                    break; 
+                
+                case 7:
+                    imagem.innerHTML ='<img src="desconto0.jpeg" width="480" height="380">'
+                    break;
+                case 8:
+                imagem.innerHTML ='<img src="desconto0.jpeg" width="480" height="380">'
+                break;  
 
                    
 
