@@ -42,7 +42,7 @@ const dicas = [
         palavra: "PROJETOR",
         dica1:" 1 -  Posso ser usado tanto pra trabalho como lazer",
         dica2:" 2 - Posso deixar imagens grandes ",
-        dica3:" 3 - Transformo sua casa em uum cinema ",
+        dica3:" 3 - Transformo sua casa em um cinema ",
     },
     {
         palavra: "NOTEBOOK",
@@ -276,7 +276,7 @@ function validaLetras(){                                                   //Val
                 document.getElementById("msgErro").innerHTML =  '<div style=" width: 200px; text-align : center; background-color: rgba(255, 255, 255, 0.466); color:rgb(196, 28, 28)" > Não foi dessa vez! </div>';
                 var imagem = document.querySelector("#imagem");
         bloqueia() 
-                imagem.innerHTML ='<img src="gif tonystark.gif" width="480" height="380">'  
+                imagem.innerHTML ='<img src="gif tonystark.gif"  height="350">'  
                 setTimeout(function(){
                     imagem.innerHTML ='<img src="voce perdeu.jpeg" width="480" height="480">'
                 },2400);
@@ -319,7 +319,7 @@ function validaLetras(){                                                   //Val
     if (JSON.stringify(palavraTela)==JSON.stringify(letrasCorretas)) {               // valida que a palavra está formada corretamente
         
         var imagem = document.querySelector("#imagem");
-        imagem.innerHTML ='<img src="gif homemdeferro.gif" width="480" height="380">'  
+        imagem.innerHTML ='<img src="gif homemdeferro.gif"  height="350">'  
         setTimeout(function(){
 
 

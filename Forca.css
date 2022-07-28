@@ -214,8 +214,8 @@ nav li:hover {
 #imagem{ /*div img*/
    /* background-image: url("HomemDeFerroFundo.png"); */
     background-repeat: no-repeat;
-    width: 120px;
-    padding: 1%;
+    width: 180px;
+    padding: 0.5%;
     display:flex;
     align-items: top;
     
@@ -227,7 +227,7 @@ nav li:hover {
 }
  
 #HomemDeFerro{ /*style homem de ferro*/
-    max-width: 40%;
+    max-width: 50%;
    
 }
 
@@ -309,7 +309,7 @@ nav li:hover {
 
     font-size: 20px;
     font-family: 'robot';
-    font-weight: bold;
+ 
 }
 
 #dicasNumeradas {
