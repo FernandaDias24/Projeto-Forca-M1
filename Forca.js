@@ -248,7 +248,11 @@ function validaLetras(){                                                   //Val
         letrasErradas.push(letra)        
         //alert ("Letra - " + letra + " - não existe")
         document.getElementById("erradas").innerHTML =  letrasErradas;
-        document.getElementById("desconto").innerHTML = "Desconto Atual : " +  (50- 10 * (PerdaDeDesconto+1)) + "%" ; 
+        
+        PerdaDeDesconto = letrasErradas.length + clicados
+        if (PerdaDeDesconto<=5) {
+            document.getElementById("desconto").innerHTML = "Desconto Atual : " +  (50- 10 * (PerdaDeDesconto)) + "%" ;   
+        }
 
 
         switch(letrasErradas.length){
@@ -301,13 +305,7 @@ function validaLetras(){                                                   //Val
 
         document.getElementById("palavraFormada").innerHTML = palavraTela.join("  ");             //Insere as corretas e incorretas em tela
        
-        
-        
-        
-        
-        
-        
-        
+          
 
 
         sobeImagens(); 
@@ -322,6 +320,11 @@ function validaLetras(){                                                   //Val
         var imagem = document.querySelector("#imagem");
         imagem.innerHTML ='<img src="gif homemdeferro.gif"  height="350">'  
         setTimeout(function(){
+        PerdaDeDesconto = letrasErradas.length + clicados
+        if (PerdaDeDesconto<=5) {
+            document.getElementById("desconto").innerHTML = "Desconto Atual : " +  (50- 10 * (PerdaDeDesconto)) + "%" ;   
+        }    
+        
 
 
             switch(PerdaDeDesconto){
@@ -422,9 +425,8 @@ var clique = 1;
 var clicados = 0
  
 function mostraDicas(){
-    PerdaDeDesconto = letrasErradas.length + clicados
-    document.getElementById("desconto").innerHTML = "Desconto Atual : " +  (50- 10 * (PerdaDeDesconto+1)) + "%" ;
-    
+
+   
     clicados = clique++
     var  exibirDicas = document.querySelector("#dicasNumeradas")  
     dicas.forEach(object =>{
@@ -456,7 +458,11 @@ function mostraDicas(){
        
 
     });
-
+    PerdaDeDesconto = letrasErradas.length + clicados
+    if (PerdaDeDesconto<=5) {
+        document.getElementById("desconto").innerHTML = "Desconto Atual : " +  (50- 10 * (PerdaDeDesconto)) + "%" ;   
+    }
+    
     console.log ("desconto perdido" ,PerdaDeDesconto)
     
 }  
