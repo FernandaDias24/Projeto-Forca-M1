@@ -280,7 +280,7 @@ function validaLetras(){                                                   //Val
                 imagem.innerHTML ='<img src="gif tonystark.gif"  height="350">'  
                 setTimeout(function(){
                     imagem.innerHTML ='<img src="voce perdeu.jpeg" width="480" height="480">'
-                },2400);
+                },2600);
 
                 setTimeout()
                 
